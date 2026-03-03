@@ -235,3 +235,41 @@ Then activate venv again.
 ```bash
 pip install -r requirements.txt
 ```
+## Step 6 – Run the Application
+```bash
+python run.py
+```
+# 🖥 Expected Terminal Output
+```bash
+========================================
+   WINDOWS AI SECURITY AUDIT SYSTEM
+========================================
+
+Scanning Machine: DESKTOP-XXXX
+
+Total Normal Records: 142
+Total Anomalies Found: 3
+
+⚠ ANOMALIES DETECTED:
+Process 9984
+OpenPort 4444
+
+Report Saved As: DESKTOP_AI_Security_Report.txt
+
+Temporary scan files removed.
+```
+# 📈 Risk Evaluation Logic
+```bash
+Anomaly Ratio = (Anomalies / Total Records)
+```
+Higher anomaly ratio indicates higher potential risk.
+
+# 🧾 Conclusion
+
+This project demonstrates how Artificial Intelligence can be applied to:
+
+- Endpoint security monitoring
+- Automated system auditing
+- Anomaly-based threat detection
+
+It simulates a lightweight Endpoint Detection & Response (EDR) system using AI techniques.
